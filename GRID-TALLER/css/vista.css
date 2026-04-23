@@ -1,0 +1,301 @@
+:root {
+    --primary-green: #6bc071;
+    --dark-green: #2d4a22;
+    --text-dark: #333;
+    --text-light: #fff;
+    --bg-light: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #2b4528;
+    color: var(--text-light);
+    padding: 15px 5%;
+}
+
+.logo h2 {
+    color: var(--primary-green);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.login{
+    color: greenyellow;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.btn-donacion {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.princip {
+    background: url('https://www.psu.com/wp/wp-content/uploads/2020/09/Ghost-of-Tsushima-PS4-PS5-Wallpapers-Backgrounds-01-min.jpg') center/cover no-repeat;
+    height: 115vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    padding-bottom: 80px; 
+}
+
+.princip-contenido .subtitulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.princip-contenido .titulo {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.princip-contenido .descripcion {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.princip-buttons .btn {
+    padding: 15px 30px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.btn-primario {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+.btn-secundario {
+    background-color: white;
+    color: var(--text-dark);
+}
+
+.caract {
+    max-width: 1200px;
+    margin: -80px auto 0; 
+    position: relative;
+    z-index: 10;
+    padding: 0 30px;
+}
+
+.caract-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.caract-card {
+    padding: 20px;
+    text-align: center;
+    border-right: 2px solid #eee;
+}
+
+.caract-card:last-child {
+    border-right: none;
+}
+
+.caract-card i {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: var(--primary-green);
+}
+
+.caract-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.caract-card p {
+    font-size: 12px;
+    color: #777;
+}
+
+.aviso-cause {
+    background: #1e2a22; 
+    color: white;
+    padding: 100px 5% 80px;
+    margin-top: 20px;
+}
+
+.aviso-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.causa-info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.causa-info p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.progreso-bar {
+    width: 100%;
+    height: 10px;
+    background: #444;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.progreso-fill {
+    height: 100%;
+    background: var(--primary-green);
+}
+
+.progreso-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progreso-stats strong {
+    font-size: 20px;
+}
+
+.progreso-stats span {
+    font-size: 12px;
+    color: #aaa;
+}
+
+
+.donacion-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.donacion-box h3 {
+    margin-bottom: 20px;
+}
+
+.donacion-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pay-btn, .pay-input {
+    background: white;
+    border: none;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    color: var(--text-dark);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pay-input {
+    padding: 15px 10px;
+}
+
+.btn-donate-large {
+    width: 100%;
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.proyectos {
+    padding: 80px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.proyectos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.proyectos-header h2 {
+    font-size: 36px;
+    color: var(--text-dark);
+}
+
+.project-filters {
+    display: flex;
+    gap: 15px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.proyectos-g {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.proyect-card {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-titulo {
+    width: 100%;
+    color: white;
+    padding: 30px 20px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
